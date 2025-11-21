@@ -36,7 +36,7 @@ np.random.seed(42)
 n = 10000
 
 datasets = {
-    "Normal": np.random.normal(loc=0, scale=1, size=n),
+    "Normal": np.random.normal(loc=0, scale=2, size=10000),
     "Exponential": np.random.exponential(scale=1.0, size=n),
     "Uniform": np.random.uniform(low=-2, high=2, size=n),
     "With Outliers": np.concatenate([np.random.normal(0, 1, size=n-10), np.random.normal(20, 1, size=10)])
